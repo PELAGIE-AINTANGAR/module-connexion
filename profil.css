@@ -1,0 +1,377 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:century; 
+}
+header{
+    background-image: url("image/marine3.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.logo a{
+    color: white;
+    padding: 0px 20px;
+    border: 0em solid white;
+    position:absolute;
+    top: 10px;
+    left: 10px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: 900;
+    text-shadow: rgba(0, 0, 0, 0, 7);
+
+
+}
+ul{
+    float: right;
+    list-style-type: none;
+    margin-top: 20px;
+    display: flex;
+}
+ul li a{
+    text-decoration: none;
+    color: blue;
+    padding: 10px 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    border: 1px solid transparent;
+    margin: 10px;
+    font-weight: 500;
+    transition: 0.6s ease;
+}
+ul li a:hover{
+    background-color: white;
+    color: black;
+}
+ul li.active a{
+    background-color: white;
+    color: black;
+}
+.principal{
+    max-width: 1200px;
+    margin:0 auto;
+}
+.titre{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+}
+.titre h1{
+    font-size: 70px;
+    font-weight: 900;
+    
+}
+.logo img{
+    width: 50px;
+    height: 50px;
+    float: left;
+
+}
+
+
+/* html{
+    max-width: 100%;
+    
+}
+.affiche {
+    background-image: url("image/marine3.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    border: 1px solid transparent;
+} */
+/* .affiche-text {
+
+    top: 50%;
+    left: 40%;
+    transform: translate(0%, -50%);
+    color:black;
+    text-align: center;
+    width: 100%;
+    font-size: -7rem;
+} */
+
+/* 
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    width: 100%;
+
+}
+#navigation{
+    display: flex;
+    justify-content: space-between;
+
+}
+.logo{
+    display: flex;
+    align-items: start;
+} */
+/* .logo > img{
+    width: 50px;
+    height: 50px;
+    float: left;
+}
+.logo > h1{
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Serif Display', serif;
+}
+.header_logo{
+    display: flex;
+    width: 100%; 
+    justify-content: right;
+    align-items: center;
+    padding: 0px; 
+
+}
+
+.profile{
+    position: relative;
+}
+.profile > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+}
+.panier{
+    position: relative;
+    float: left;
+}
+.panier > img{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin: 10px;
+    
+
+}
+#search {
+
+    font-size: 17px;
+    border: 2px solid grey;
+    border-radius: 9px;
+    height: auto;
+}
+.btn{
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    border-radius: 9px;
+    padding: 5px 10px;
+    font-size: 17px;
+    
+    margin-left: 50px;
+}
+.rightNav {
+    
+    display: flex;
+    width: 100%;
+    justify-content: right;
+    align-items: center;
+    padding: 0px;
+    margin-left: 460px;
+
+    
+    
+}
+.header_Nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    
+   
+}
+nav{
+    display: flex;
+    
+    
+}
+nav > ul{
+    display: flex;
+    width: 50%;
+    
+}
+nav > li{
+    list-style: none;
+    align-items: center;    
+    
+}
+nav > li > a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-family: 'Noto Serif Display', serif;
+    
+}
+main {
+    position: relative;
+    top: 0;
+}
+.parti2{
+    display: flex;
+    justify-content: space-around;
+    padding: 20 40px;
+
+
+}
+.decouvert{
+    background: rgb(233, 225, 241);
+    width: 270px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.decouvert-img{
+    background-color: aqua;
+    height: 250px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+}
+.decouvert_1{
+    background-image: url("image/marine1.jpg");
+}
+.decouverte_2{
+    background-image: url("image/images\ \(1\).jpg");
+}
+.decouverte_3{
+    background-image: url("image/enfant\(5\).jpg");
+}
+.decouverte_4{
+    background-image: url("image/beret.webp");
+}
+.decouverte a{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+.decouvert:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all 1s ease;
+    padding: 10px 15px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+}
+.parti3{
+    background-color: rgba(204, 208, 206, 0.879);
+}
+.collecte{
+    text-align: center;
+}
+.collection{
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    padding: 36px;
+}
+.first{
+    background-color: aqua;
+    width: 330px;
+    height: 400px;
+    margin: 10px;
+    border-radius: 15px;
+}
+.image1{
+    background-image: url("image/rename.webp")
+}
+.image2{
+    background-image: url("image/collection2.jpg")
+
+}
+.image3{
+    background-image: url("image/comment-porter-une-casquette-de-sport.jpeg")
+
+} */
+/* .partie1{
+    height: 100vh;
+    width: 100%;
+    background-image: url("image/casquete.png");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+} 
+/* .decouvert{
+    background: rgba(0,0,0,0.5);
+    width: 220px;
+    height: 400px;
+    margin: 10px;
+}
+.decouvert-img{
+    background-color: aqua;
+    height: 150px;
+    margin-bottom: 15px;
+}
+.decouvert h2{
+    padding: 10px;
+}
+.decouvert p{
+    padding: 10px;
+} */
+/* .decouvert button{
+    background-color: black;
+    color: white;
+    padding: 10px 15px;
+    display: block;
+    margin: 20px 50px;
+}
+.partie2{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+    
+    
+}
+.decouvert{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 30%;
+    height: 100%;
+    background-color: #f5f5f5;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    
+    
+}  */
+
+/* .decouvert > img{
+    
+    max-width: 100%;
+    height: auto;
+} 
+.decouvert h2 {
+    margin-top: 10px;
+    font-size: 1.5rem;
+  }
+  
+.decouvert button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #000;
+    color: #fff;
+    border: none;
+  } */ 
